@@ -1,0 +1,1 @@
+This repository focuses on an internship that takes place in Podgorica in 2026. I am a part of data analyst team and my goal is to understand ETL/ELT pipeline and to work closely with data structures, sql and python. 
