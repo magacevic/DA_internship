@@ -1,0 +1,801 @@
+dish_id,dish_name,cuisine_category_id,price_eur,is_vegetarian,is_spicy,popularity_score
+1,Hamburger,4,6.49,0,0,3.2
+2,Greek Salad,5,8.49,1,0,10.0
+3,Green Curry,3,10.49,0,1,4.7
+4,Hummus Plate,5,7.99,1,0,10.0
+5,Falafel Wrap,5,8.49,1,1,3.3
+6,Musaka,2,8.99,0,0,3.8
+7,Spicy Tuna Roll,3,11.49,0,1,3.6
+8,Teriyaki Chicken,3,9.49,0,0,3.6
+9,Edamame,3,5.99,1,0,4.3
+10,Vegetable Quiche,5,9.49,1,0,5.5
+11,Hamburger,4,7.49,0,0,4.1
+12,Tom Yum Soup,3,6.99,0,1,4.1
+13,Quesadilla Queso,6,8.99,1,0,3.9
+14,Hummus Plate,5,7.49,1,0,2.5
+15,Sarma,2,11.49,0,0,10.0
+16,Chicken Wings,4,9.49,0,1,5.6
+17,Taco Salad,6,7.49,0,0,2.5
+18,Ceviche,6,10.99,0,1,1.6
+19,Ajvar,2,4.99,1,1,4.9
+20,Chicken Nuggets,4,6.49,0,0,6.9
+21,Caesar Salad,5,8.49,0,0,2.1
+22,Pasta Bolognese,1,9.49,0,0,9.2
+23,Double Cheeseburger,4,9.49,0,0,1.0
+24,Goulash,2,11.99,0,0,2.7
+25,Chiles Rellenos,6,10.49,1,1,2.3
+26,Veggie Burger,5,8.99,1,0,5.3
+27,Fish and Chips,4,10.49,0,0,7.0
+28,Osso Buco,1,20.99,0,0,6.4
+29,Tiramisu,1,5.49,1,0,1.4
+30,Miso Soup,3,3.99,1,0,3.4
+31,Pad Thai,3,12.49,0,1,2.9
+32,Pljeskavica,2,9.49,0,0,6.7
+33,Double Cheeseburger,4,9.49,0,0,7.8
+34,Chicken Burger,4,7.49,0,0,10.0
+35,Chiles Rellenos,6,11.99,1,1,1.2
+36,Burrito Carne,6,8.99,0,0,4.9
+37,Taco Salad,6,9.49,0,0,2.0
+38,Teriyaki Chicken,3,11.49,0,0,7.8
+39,French Fries,4,3.49,1,0,9.0
+40,Chicken Nuggets,4,6.99,0,0,5.1
+41,Pasta Carbonara,1,9.49,0,1,5.7
+42,Tom Yum Soup,3,8.49,0,1,9.8
+43,Caprese Salad,5,6.99,1,0,6.1
+44,Panang Curry,3,10.49,0,1,5.8
+45,Falafel Wrap,5,7.49,1,0,4.5
+46,Penne Arrabbiata,1,10.99,1,1,7.3
+47,Gibanica,2,4.49,1,0,5.8
+48,Hot Dog,4,4.99,0,1,4.0
+49,Tiramisu,1,5.99,1,0,6.3
+50,Chicken Nuggets,4,5.49,0,0,6.2
+51,Tacos al Pastor,6,11.49,0,1,1.0
+52,Pljeskavica,2,10.99,0,0,6.3
+53,Raznjici,2,12.99,0,0,3.8
+54,Ravioli Ricotta,1,10.49,1,0,3.3
+55,Sarma,2,10.99,0,0,9.5
+56,Veggie Burger,5,10.49,1,0,7.7
+57,Gibanica,2,3.99,1,0,6.9
+58,Hot Dog,4,5.49,0,0,9.2
+59,French Fries,4,2.49,1,1,5.7
+60,Chicken Nuggets,4,5.49,0,0,9.6
+61,Hamburger,4,5.49,0,0,2.3
+62,Greek Salad,5,6.49,1,0,3.6
+63,Green Curry,3,11.99,0,1,6.2
+64,Enchiladas Verdes,6,10.99,0,1,2.1
+65,Fettuccine Alfredo,1,10.49,1,0,1.3
+66,Chicken Wings,4,9.49,0,1,4.9
+67,Gibanica,2,3.99,1,0,8.0
+68,Hot Dog,4,4.49,0,0,4.8
+69,Ajvar,2,4.49,1,1,8.0
+70,Churros,6,4.99,1,0,9.4
+71,Tacos al Pastor,6,9.99,0,1,4.3
+72,Tacos Carnitas,6,10.49,0,0,2.6
+73,Raznjici,2,9.49,0,0,9.3
+74,Chicken Burger,4,8.49,0,0,6.7
+75,Chiles Rellenos,6,9.99,1,1,5.9
+76,Veggie Burger,5,10.49,1,0,6.7
+77,Gibanica,2,5.49,1,0,1.2
+78,Burek,2,4.49,0,0,10.0
+79,French Fries,4,2.49,1,0,4.8
+80,Srpski Gulaš,2,11.99,0,1,8.2
+81,Cevapi,2,10.49,0,0,7.2
+82,Tacos Carnitas,6,11.49,0,0,2.3
+83,Double Cheeseburger,4,9.49,0,0,2.3
+84,Enchiladas Verdes,6,10.49,0,1,6.5
+85,Chiles Rellenos,6,11.99,1,1,1.1
+86,Chicken Wings,4,9.49,0,1,5.9
+87,Risotto ai Funghi,1,12.49,1,0,1.4
+88,Ceviche,6,12.99,0,1,1.6
+89,Tomato Soup,5,6.49,1,0,8.2
+90,Vegetable Quiche,5,9.49,1,0,6.6
+91,Cevapi,2,8.99,0,0,6.6
+92,Greek Salad,5,8.99,1,0,2.2
+93,Raznjici,2,10.99,0,0,5.1
+94,Ravioli Ricotta,1,13.49,1,1,4.4
+95,Fried Chicken,4,7.99,0,0,2.7
+96,Chicken Wings,4,9.49,0,1,8.6
+97,Fish and Chips,4,8.49,0,0,6.1
+98,Veggie Stir Fry,5,9.49,1,1,8.8
+99,Tiramisu,1,6.99,1,0,10.0
+100,Vegetable Quiche,5,7.49,1,0,10.0
+101,Caesar Salad,5,8.49,0,0,2.3
+102,Pasta Bolognese,1,11.99,0,0,3.0
+103,Lasagna,1,11.99,0,0,5.1
+104,Ravioli Ricotta,1,9.99,1,0,4.4
+105,Fettuccine Alfredo,1,12.49,1,0,3.5
+106,Chicken Wings,4,8.49,0,1,2.0
+107,Spicy Tuna Roll,3,12.49,0,1,1.3
+108,Teriyaki Chicken,3,12.99,0,0,9.7
+109,Tiramisu,1,5.99,1,0,3.3
+110,Miso Soup,3,4.99,1,0,8.1
+111,Pad Thai,3,11.99,0,1,1.5
+112,Pasta Bolognese,1,10.49,0,0,4.7
+113,Green Curry,3,10.99,0,1,5.1
+114,Hummus Plate,5,7.99,1,0,4.8
+115,Sarma,2,9.49,0,0,9.2
+116,Musaka,2,10.49,0,0,5.1
+117,Risotto ai Funghi,1,10.99,1,0,5.0
+118,Hot Dog,4,4.49,0,0,7.6
+119,Tiramisu,1,6.99,1,0,5.3
+120,Chicken Nuggets,4,5.49,0,0,6.9
+121,Cevapi,2,8.49,0,0,6.4
+122,Pasta Bolognese,1,10.99,0,0,5.1
+123,Quesadilla Queso,6,8.99,1,0,4.8
+124,Hummus Plate,5,5.99,1,0,9.7
+125,California Roll,3,10.49,0,0,10.0
+126,Chicken Wings,4,8.49,0,1,8.0
+127,Taco Salad,6,9.99,0,0,4.7
+128,Teriyaki Chicken,3,10.49,0,0,7.9
+129,Edamame,3,4.99,1,0,5.5
+130,Panna Cotta,1,6.49,1,1,2.1
+131,Pad Thai,3,12.49,0,1,3.4
+132,Greek Salad,5,7.99,1,0,10.0
+133,Quesadilla Queso,6,6.99,1,0,2.9
+134,Panang Curry,3,9.99,0,1,3.6
+135,Fettuccine Alfredo,1,9.99,1,0,2.4
+136,Veggie Burger,5,7.99,1,0,8.9
+137,Gibanica,2,4.99,1,0,6.6
+138,Ceviche,6,10.49,0,1,2.8
+139,Edamame,3,5.49,1,0,3.9
+140,Panna Cotta,1,5.49,1,1,2.0
+141,Cevapi,2,8.99,0,0,8.7
+142,Pljeskavica,2,10.99,0,0,9.8
+143,Double Cheeseburger,4,10.99,0,0,8.8
+144,Hummus Plate,5,8.49,1,0,9.0
+145,California Roll,3,10.49,0,0,1.0
+146,Penne Arrabbiata,1,10.99,1,1,10.0
+147,Fish and Chips,4,10.99,0,0,6.1
+148,Veggie Stir Fry,5,8.49,1,1,3.1
+149,French Fries,4,2.49,1,0,4.9
+150,Churros,6,4.49,1,1,6.8
+151,Caesar Salad,5,9.49,0,0,7.5
+152,Greek Salad,5,8.99,1,0,8.3
+153,Green Curry,3,13.99,0,1,3.4
+154,Hummus Plate,5,7.99,1,0,6.5
+155,Fried Chicken,4,8.99,0,0,3.6
+156,Veggie Burger,5,8.99,1,0,8.5
+157,Spicy Tuna Roll,3,9.99,0,1,5.9
+158,Teriyaki Chicken,3,12.99,0,0,2.6
+159,Guacamole & Chips,6,5.49,1,0,6.9
+160,Chicken Nuggets,4,5.99,0,0,3.3
+161,Cevapi,2,7.99,0,0,10.0
+162,Pljeskavica,2,8.49,0,0,4.5
+163,Caprese Salad,5,8.99,1,0,4.9
+164,Enchiladas Verdes,6,11.99,0,1,5.9
+165,Fettuccine Alfredo,1,11.99,1,0,7.5
+166,Veggie Burger,5,7.49,1,1,8.3
+167,Taco Salad,6,7.99,0,0,2.4
+168,Hot Dog,4,4.49,0,0,7.3
+169,French Fries,4,2.99,1,1,7.5
+170,Chicken Nuggets,4,5.99,0,0,5.0
+171,Hamburger,4,5.49,0,0,8.3
+172,Cheeseburger,4,7.99,0,0,6.9
+173,Quesadilla Queso,6,7.99,1,0,8.0
+174,Enchiladas Verdes,6,9.99,0,1,4.5
+175,California Roll,3,9.49,0,0,5.5
+176,Musaka,2,11.49,0,0,7.3
+177,Fish and Chips,4,9.49,0,0,9.1
+178,Osso Buco,1,16.49,0,0,9.4
+179,Guacamole & Chips,6,6.99,1,0,5.1
+180,Panna Cotta,1,4.99,1,0,5.3
+181,Pasta Carbonara,1,12.49,0,0,3.9
+182,Pasta Bolognese,1,10.49,0,0,9.4
+183,Green Curry,3,11.49,0,1,6.2
+184,Enchiladas Verdes,6,9.49,0,1,3.3
+185,Fettuccine Alfredo,1,13.49,1,0,4.9
+186,Chicken Wings,4,7.99,0,1,10.0
+187,Buddha Bowl,5,9.49,1,0,5.4
+188,Osso Buco,1,18.49,0,0,7.9
+189,Edamame,3,5.49,1,0,3.5
+190,Churros,6,4.99,1,0,5.5
+191,Pad Thai,3,12.49,0,1,2.3
+192,Pasta Bolognese,1,10.49,0,0,5.4
+193,Quesadilla Queso,6,8.49,1,0,6.4
+194,Hummus Plate,5,7.49,1,0,10.0
+195,Fettuccine Alfredo,1,12.49,1,0,7.5
+196,Dragon Roll,3,11.99,0,1,1.0
+197,Gibanica,2,5.49,1,0,10.0
+198,Hot Dog,4,4.49,0,0,10.0
+199,Edamame,3,5.49,1,0,2.4
+200,Churros,6,5.49,1,0,6.6
+201,Pasta Carbonara,1,12.49,0,0,9.8
+202,Cheeseburger,4,6.99,0,0,3.7
+203,Lasagna,1,12.49,0,0,3.4
+204,Enchiladas Verdes,6,10.49,0,1,2.5
+205,Fettuccine Alfredo,1,11.99,1,0,8.1
+206,Musaka,2,9.99,0,0,7.1
+207,Fish and Chips,4,8.99,0,0,9.5
+208,Hot Dog,4,3.99,0,0,7.0
+209,Guacamole & Chips,6,6.49,1,0,3.3
+210,Srpski Gulaš,2,11.49,0,1,2.7
+211,Pad Thai,3,11.49,0,1,5.2
+212,Pasta Bolognese,1,10.99,0,0,10.0
+213,Caprese Salad,5,7.49,1,0,9.8
+214,Ravioli Ricotta,1,12.49,1,0,1.9
+215,Fettuccine Alfredo,1,11.49,1,0,3.0
+216,Dragon Roll,3,11.99,0,0,5.3
+217,Risotto ai Funghi,1,11.99,1,0,3.1
+218,Burek,2,4.49,0,0,4.9
+219,Ajvar,2,4.99,1,1,3.0
+220,Chicken Nuggets,4,6.49,0,0,4.7
+221,Tacos al Pastor,6,10.99,0,1,4.9
+222,Greek Salad,5,7.99,1,1,4.1
+223,Lasagna,1,12.99,0,0,6.8
+224,Ravioli Ricotta,1,10.49,1,0,2.3
+225,California Roll,3,7.99,0,0,1.0
+226,Burrito Carne,6,8.49,0,0,3.0
+227,Gibanica,2,5.49,1,0,4.1
+228,Veggie Stir Fry,5,8.49,1,1,7.9
+229,French Fries,4,3.49,1,0,7.5
+230,Srpski Gulaš,2,11.49,0,1,10.0
+231,Tacos al Pastor,6,10.49,0,1,3.7
+232,Cheeseburger,4,6.49,0,0,5.9
+233,Green Curry,3,11.49,0,1,2.0
+234,Panang Curry,3,12.99,0,1,2.0
+235,Fettuccine Alfredo,1,13.49,1,0,4.0
+236,Burrito Carne,6,10.99,0,0,3.5
+237,Buddha Bowl,5,8.99,1,0,4.3
+238,Hot Dog,4,4.99,0,0,1.5
+239,Ajvar,2,3.99,1,1,9.2
+240,Churros,6,3.99,1,0,7.1
+241,Tacos al Pastor,6,10.49,0,1,5.9
+242,Tom Yum Soup,3,7.99,0,1,6.1
+243,Lasagna,1,11.49,0,0,2.2
+244,Ravioli Ricotta,1,10.99,1,0,3.0
+245,Fried Chicken,4,8.49,0,0,10.0
+246,Dragon Roll,3,13.49,0,0,1.0
+247,Taco Salad,6,8.99,0,0,3.5
+248,Veggie Stir Fry,5,8.49,1,1,9.2
+249,Edamame,3,4.99,1,1,2.9
+250,Chicken Nuggets,4,6.49,0,0,5.6
+251,Hamburger,4,7.49,0,0,8.7
+252,Tom Yum Soup,3,8.99,0,1,10.0
+253,Double Cheeseburger,4,8.49,0,0,6.8
+254,Panang Curry,3,11.49,0,1,4.3
+255,Sarma,2,9.49,0,0,10.0
+256,Dragon Roll,3,13.49,0,0,6.4
+257,Spicy Tuna Roll,3,9.49,0,1,2.1
+258,Hot Dog,4,3.99,0,0,10.0
+259,French Fries,4,2.99,1,0,3.9
+260,Panna Cotta,1,5.49,1,0,1.6
+261,Pasta Carbonara,1,10.49,0,0,5.4
+262,Pljeskavica,2,8.49,0,0,4.0
+263,Lasagna,1,14.49,0,0,5.0
+264,Panang Curry,3,10.99,0,1,1.7
+265,Fried Chicken,4,9.99,0,0,7.2
+266,Penne Arrabbiata,1,10.99,1,1,4.9
+267,Risotto ai Funghi,1,11.99,1,0,4.2
+268,Burek,2,4.49,0,1,6.7
+269,Guacamole & Chips,6,6.99,1,0,5.3
+270,Srpski Gulaš,2,9.99,0,1,8.8
+271,Pad Thai,3,12.49,0,1,1.0
+272,Cheeseburger,4,7.49,0,0,3.7
+273,Raznjici,2,9.99,0,0,4.5
+274,Ravioli Ricotta,1,11.49,1,0,6.9
+275,Fried Chicken,4,9.99,0,0,2.4
+276,Chicken Wings,4,7.99,0,1,2.5
+277,Risotto ai Funghi,1,13.99,1,0,8.3
+278,Burek,2,4.49,0,0,3.9
+279,Tiramisu,1,4.99,1,0,3.6
+280,Churros,6,5.49,1,0,9.2
+281,Hamburger,4,5.99,0,0,4.9
+282,Greek Salad,5,6.99,1,0,4.8
+283,Caprese Salad,5,7.99,1,0,4.7
+284,Panang Curry,3,12.99,0,1,1.0
+285,Fettuccine Alfredo,1,12.49,1,0,7.4
+286,Penne Arrabbiata,1,10.99,1,1,5.2
+287,Spicy Tuna Roll,3,12.99,0,1,6.1
+288,Teriyaki Chicken,3,9.49,0,0,1.0
+289,Edamame,3,4.99,1,0,1.0
+290,Chicken Nuggets,4,5.99,0,0,6.3
+291,Tacos al Pastor,6,8.49,0,1,3.8
+292,Pasta Bolognese,1,9.99,0,0,1.9
+293,Double Cheeseburger,4,10.99,0,1,7.4
+294,Panang Curry,3,12.99,0,1,2.4
+295,Fettuccine Alfredo,1,11.49,1,1,5.3
+296,Chicken Wings,4,9.49,0,1,9.3
+297,Taco Salad,6,8.49,0,0,5.8
+298,Hot Dog,4,4.49,0,0,6.9
+299,Guacamole & Chips,6,5.99,1,0,3.2
+300,Miso Soup,3,4.99,1,0,5.0
+301,Pizza Margherita,1,8.49,1,0,8.3
+302,Karaðorðeva šnicla,2,12.49,0,0,10.0
+303,Kung Pao Chicken,3,9.49,0,1,7.6
+304,Club Sandwich,4,6.49,0,0,3.8
+305,Lentil Curry,5,8.49,1,1,9.2
+306,Nachos Supreme,6,8.49,1,1,8.4
+307,Pizza Capricciosa,1,12.99,0,0,4.6
+308,Peèenje,2,13.49,0,0,2.8
+309,Sweet and Sour Pork,3,11.49,0,1,1.9
+310,Onion Rings,4,3.49,1,0,8.9
+311,Quinoa Salad,5,9.49,1,0,6.7
+312,Chicken Fajitas,6,10.99,0,1,1.3
+313,Pizza Diavola,1,9.99,0,1,6.2
+314,Punjene paprike,2,9.99,0,1,9.1
+315,Spring Rolls,3,5.49,1,0,1.3
+316,Cheese Fries,4,3.99,1,0,6.6
+317,Mushroom Risotto,5,9.99,1,0,6.0
+318,Burrito Bowl,6,8.99,0,1,6.6
+319,Pizza Quattro Formaggi,1,13.99,1,0,4.6
+320,Pasulj prebranac,2,7.49,1,1,3.3
+321,Ramen Tonkotsu,3,12.99,0,0,4.0
+322,Bacon Burger,4,8.99,0,0,3.9
+323,Avocado Toast,5,7.99,1,0,8.9
+324,Beef Chimichanga,6,12.49,0,0,4.0
+325,Gnocchi al Pesto,1,9.49,1,1,7.0
+326,Beèka šnicla,2,14.49,0,0,5.9
+327,Gyoza,3,5.49,0,0,3.7
+328,Spicy Chicken Wrap,4,7.49,0,1,3.9
+329,Spinach Pie,5,6.49,1,0,4.2
+330,Elote,6,3.99,1,1,1.2
+331,Spaghetti Aglio e Olio,1,9.99,1,1,4.7
+332,Komplet lepinja,2,5.49,0,0,10.0
+333,Fried Rice,3,6.99,1,1,1.5
+334,Pizza Slice,4,3.99,1,0,9.9
+335,Halloumi Salad,5,11.49,1,1,8.3
+336,Tortilla Soup,6,7.49,0,1,6.1
+337,Bruschetta,1,5.49,1,1,7.3
+338,Šopska salata,2,4.99,1,0,3.5
+339,Beef Pho,3,10.49,0,0,1.3
+340,Milkshake,4,3.99,1,0,10.0
+341,Grilled Vegetables,5,7.99,1,0,3.3
+342,Tostadas,6,7.49,0,0,1.9
+343,Minestrone,1,4.99,1,0,1.9
+344,Kajmak,2,3.99,1,0,5.5
+345,Chicken Satay,3,9.99,0,1,8.1
+346,Mozzarella Sticks,4,4.49,1,0,7.9
+347,Vegan Chili,5,10.49,1,1,10.0
+348,Chili con Carne,6,10.99,0,1,9.7
+349,Saltimbocca,1,17.49,0,0,5.6
+350,Riblja èorba,2,9.99,0,1,9.2
+351,Bibimbap,3,9.99,0,1,2.0
+352,Crispy Chicken Strips,4,6.49,0,0,8.8
+353,Pumpkin Soup,5,4.99,1,0,9.9
+354,Bean Burrito,6,8.49,1,0,7.0
+355,Calzone,1,12.99,0,0,3.5
+356,Proja,2,3.49,1,0,7.9
+357,Salmon Nigiri,3,9.99,0,0,1.6
+358,Fish Burger,4,8.49,0,0,2.6
+359,Tofu Bowl,5,10.99,1,0,5.8
+360,Mexican Rice,6,4.49,1,0,4.3
+361,Gnocchi al Pesto,1,9.99,1,0,3.7
+362,Beèka šnicla,2,10.99,0,0,10.0
+363,Tom Yum Soup,3,6.99,0,1,10.0
+364,Chicken Nuggets,4,6.99,0,0,1.0
+365,Veggie Burger,5,8.49,1,0,5.4
+366,Tostadas,6,8.99,0,0,2.9
+367,Lasagna,1,14.49,0,0,2.5
+368,Peèenje,2,13.49,0,0,3.8
+369,Gyoza,3,6.99,0,0,10.0
+370,Bacon Burger,4,8.99,0,0,8.9
+371,Veggie Stir Fry,5,10.99,1,1,10.0
+372,Tacos Carnitas,6,10.99,0,0,6.7
+373,Osso Buco,1,18.49,0,0,3.8
+374,Riblja èorba,2,7.49,0,1,4.1
+375,Kung Pao Chicken,3,10.49,0,1,3.9
+376,Fried Chicken,4,8.49,0,0,5.9
+377,Tomato Soup,5,5.49,1,0,4.5
+378,Ceviche,6,12.49,0,1,8.1
+379,Pizza Quattro Formaggi,1,11.49,1,0,7.8
+380,Srpski Gulaš,2,10.99,0,1,8.3
+381,Bibimbap,3,11.99,0,1,6.4
+382,Fried Chicken,4,8.49,0,0,4.2
+383,Falafel Wrap,5,8.49,1,0,9.8
+384,Tacos Carnitas,6,7.99,0,0,5.4
+385,Spaghetti Aglio e Olio,1,8.99,1,1,7.2
+386,Kajmak,2,4.49,1,0,9.5
+387,Fried Rice,3,8.99,1,0,7.7
+388,Double Cheeseburger,4,10.49,0,0,6.6
+389,Halloumi Salad,5,9.49,1,0,2.4
+390,Tortilla Soup,6,7.49,0,1,8.3
+391,Panna Cotta,1,4.99,1,0,7.0
+392,Gibanica,2,4.99,1,0,6.5
+393,Panang Curry,3,10.99,0,1,4.9
+394,Mozzarella Sticks,4,5.49,1,0,7.1
+395,Tofu Bowl,5,10.49,1,0,9.1
+396,Tostadas,6,7.99,0,0,4.7
+397,Saltimbocca,1,14.99,0,1,2.2
+398,Beèka šnicla,2,13.99,0,0,5.0
+399,Teriyaki Chicken,3,12.99,0,0,2.9
+400,Cheeseburger,4,7.99,0,0,6.4
+401,Grilled Vegetables,5,7.49,1,0,8.1
+402,Tortilla Soup,6,5.99,0,1,1.1
+403,Pasta Carbonara,1,12.49,0,0,6.4
+404,Proja,2,3.99,1,0,2.9
+405,Green Curry,3,10.99,0,1,6.1
+406,Bacon Burger,4,8.49,0,0,1.0
+407,Caesar Salad,5,8.49,0,0,6.2
+408,Chili con Carne,6,9.49,0,1,4.9
+409,Risotto ai Funghi,1,10.49,1,1,7.5
+410,Pasulj prebranac,2,6.99,1,0,3.5
+411,Dragon Roll,3,13.49,0,0,3.6
+412,Spicy Chicken Wrap,4,7.99,0,1,1.0
+413,Quinoa Salad,5,8.49,1,0,1.5
+414,Chili con Carne,6,10.49,0,1,2.9
+415,Pasta Bolognese,1,12.49,0,0,5.0
+416,Komplet lepinja,2,7.49,0,0,7.5
+417,Miso Soup,3,5.49,1,0,4.3
+418,Chicken Wings,4,6.99,0,1,8.2
+419,Buddha Bowl,5,10.49,1,0,10.0
+420,Chili con Carne,6,9.99,0,1,7.7
+421,Fettuccine Alfredo,1,11.99,1,0,7.2
+422,Komplet lepinja,2,6.49,0,0,9.0
+423,Edamame,3,5.49,1,0,3.3
+424,Chicken Burger,4,6.99,0,0,6.6
+425,Hummus Plate,5,6.99,1,0,10.0
+426,Nachos Supreme,6,6.99,1,0,5.5
+427,Spaghetti Aglio e Olio,1,7.99,1,1,6.8
+428,Punjene paprike,2,8.49,0,0,9.3
+429,Miso Soup,3,4.99,1,0,7.7
+430,Fish Burger,4,6.99,0,0,1.0
+431,Veggie Stir Fry,5,8.49,1,1,8.3
+432,Guacamole & Chips,6,6.99,1,1,1.0
+433,Tiramisu,1,6.99,1,1,2.9
+434,Gibanica,2,3.99,1,0,4.8
+435,Kung Pao Chicken,3,9.99,0,1,8.0
+436,Fried Chicken,4,8.99,0,0,8.4
+437,Vegan Chili,5,7.99,1,1,10.0
+438,Tostadas,6,8.49,0,0,4.9
+439,Bruschetta,1,4.99,1,0,1.1
+440,Karaðorðeva šnicla,2,11.99,0,0,10.0
+441,Spicy Tuna Roll,3,10.49,0,1,3.4
+442,Onion Rings,4,3.99,1,1,4.6
+443,Caprese Salad,5,8.99,1,0,10.0
+444,Bean Burrito,6,8.49,1,0,1.0
+445,Panna Cotta,1,5.99,1,0,5.4
+446,Riblja èorba,2,7.99,0,1,1.9
+447,Edamame,3,5.49,1,0,2.0
+448,Fried Chicken,4,9.49,0,0,3.0
+449,Tomato Soup,5,4.49,1,0,8.0
+450,Churros,6,4.49,1,0,7.9
+451,Osso Buco,1,16.99,0,0,4.0
+452,Burek,2,3.99,0,1,10.0
+453,Teriyaki Chicken,3,11.49,0,0,3.3
+454,Chicken Burger,4,8.49,0,0,6.3
+455,Caprese Salad,5,8.49,1,0,6.0
+456,Chicken Fajitas,6,11.99,0,1,10.0
+457,Bruschetta,1,4.99,1,0,4.3
+458,Kajmak,2,3.49,1,0,2.9
+459,Teriyaki Chicken,3,11.99,0,0,3.2
+460,Spicy Chicken Wrap,4,6.49,0,1,7.1
+461,Caprese Salad,5,7.49,1,0,8.1
+462,Burrito Bowl,6,9.99,0,0,6.2
+463,Risotto ai Funghi,1,12.99,1,0,6.5
+464,Proja,2,3.49,1,0,2.1
+465,Ramen Tonkotsu,3,11.99,0,1,8.6
+466,Mozzarella Sticks,4,4.99,1,0,10.0
+467,Avocado Toast,5,6.49,1,0,1.8
+468,Tortilla Soup,6,6.99,0,1,5.1
+469,Pizza Capricciosa,1,11.49,0,0,9.3
+470,Sarma,2,9.49,0,0,9.4
+471,Gyoza,3,7.49,0,0,8.4
+472,Crispy Chicken Strips,4,8.99,0,1,2.8
+473,Buddha Bowl,5,8.99,1,0,3.3
+474,Guacamole & Chips,6,4.99,1,0,4.1
+475,Pizza Margherita,1,10.49,1,0,5.4
+476,Peèenje,2,12.49,0,0,5.6
+477,Bibimbap,3,9.99,0,1,2.2
+478,Cheeseburger,4,8.99,0,0,2.7
+479,Lentil Curry,5,8.49,1,1,4.1
+480,Churros,6,4.49,1,1,1.0
+481,Pizza Margherita,1,8.49,1,0,2.7
+482,Raznjici,2,10.99,0,0,5.6
+483,Beef Pho,3,10.49,0,0,1.0
+484,Milkshake,4,4.49,1,0,5.6
+485,Greek Salad,5,8.49,1,0,7.9
+486,Tacos Carnitas,6,8.99,0,0,7.8
+487,Panna Cotta,1,4.99,1,0,6.8
+488,Šopska salata,2,4.49,1,0,9.2
+489,Miso Soup,3,4.99,1,1,6.4
+490,Hamburger,4,6.99,0,0,5.2
+491,Quinoa Salad,5,8.49,1,0,8.5
+492,Guacamole & Chips,6,5.49,1,0,3.4
+493,Pizza Margherita,1,9.99,1,0,1.3
+494,Punjene paprike,2,10.99,0,1,9.0
+495,Teriyaki Chicken,3,10.49,0,0,4.1
+496,Fried Chicken,4,7.49,0,0,4.3
+497,Quinoa Salad,5,10.49,1,0,2.9
+498,Guacamole & Chips,6,6.49,1,0,4.3
+499,Tiramisu,1,5.49,1,0,8.2
+500,Riblja èorba,2,8.49,0,1,1.0
+501,Salmon Nigiri,3,10.49,0,0,2.9
+502,Fish and Chips,4,8.99,0,0,5.4
+503,Caprese Salad,5,8.49,1,0,7.4
+504,Quesadilla Queso,6,8.49,1,0,1.3
+505,Minestrone,1,5.99,1,0,6.4
+506,Šopska salata,2,4.49,1,0,10.0
+507,Chicken Satay,3,7.49,0,1,3.0
+508,Chicken Burger,4,6.99,0,0,6.2
+509,Pumpkin Soup,5,5.49,1,0,7.2
+510,Bean Burrito,6,8.49,1,1,7.2
+511,Pizza Diavola,1,11.99,0,1,5.5
+512,Srpski Gulaš,2,11.49,0,1,5.4
+513,Fried Rice,3,7.99,1,0,1.2
+514,Fish and Chips,4,9.99,0,0,6.2
+515,Grilled Vegetables,5,8.99,1,0,7.6
+516,Nachos Supreme,6,9.49,1,0,7.2
+517,Tiramisu,1,5.99,1,0,8.4
+518,Proja,2,3.49,1,0,3.5
+519,Tom Yum Soup,3,6.49,0,1,2.5
+520,Hamburger,4,5.49,0,0,9.3
+521,Buddha Bowl,5,10.99,1,1,3.5
+522,Churros,6,4.99,1,0,1.0
+523,Pizza Margherita,1,9.49,1,1,2.9
+524,Pasulj prebranac,2,8.49,1,0,5.9
+525,Ramen Tonkotsu,3,12.99,0,0,5.3
+526,Fried Chicken,4,9.99,0,0,9.7
+527,Pumpkin Soup,5,5.99,1,0,9.7
+528,Burrito Bowl,6,10.99,0,0,1.7
+529,Pasta Bolognese,1,10.49,0,0,3.9
+530,Ajvar,2,5.49,1,1,2.4
+531,Panang Curry,3,12.49,0,1,4.1
+532,Cheeseburger,4,6.49,0,0,5.4
+533,Buddha Bowl,5,9.99,1,0,10.0
+534,Tacos al Pastor,6,10.99,0,1,1.4
+535,Penne Arrabbiata,1,8.49,1,1,4.8
+536,Pljeskavica,2,7.99,0,0,10.0
+537,Bibimbap,3,10.99,0,1,1.0
+538,Chicken Nuggets,4,5.49,0,0,8.6
+539,Halloumi Salad,5,8.99,1,0,8.5
+540,Enchiladas Verdes,6,9.99,0,1,1.2
+541,Pasta Carbonara,1,9.99,0,0,4.8
+542,Peèenje,2,13.49,0,0,10.0
+543,Tom Yum Soup,3,6.99,0,1,1.0
+544,Bacon Burger,4,8.49,0,0,7.2
+545,Hummus Plate,5,6.49,1,0,7.7
+546,Tortilla Soup,6,6.49,0,1,5.2
+547,Pizza Quattro Formaggi,1,12.49,1,0,2.1
+548,Srpski Gulaš,2,11.99,0,1,9.2
+549,Edamame,3,4.49,1,0,1.0
+550,Mozzarella Sticks,4,5.49,1,0,8.7
+551,Quinoa Salad,5,11.49,1,0,7.0
+552,Burrito Carne,6,11.99,0,0,5.3
+553,Gnocchi al Pesto,1,11.99,1,0,8.6
+554,Pljeskavica,2,7.99,0,0,3.1
+555,Fried Rice,3,6.99,1,0,8.8
+556,Pizza Slice,4,3.49,1,0,3.1
+557,Halloumi Salad,5,10.99,1,0,1.8
+558,Tacos al Pastor,6,7.99,0,1,3.2
+559,Pizza Quattro Formaggi,1,11.49,1,0,9.1
+560,Šopska salata,2,4.49,1,0,9.2
+561,Bibimbap,3,12.49,0,1,5.2
+562,Hamburger,4,6.99,0,0,8.4
+563,Veggie Stir Fry,5,10.99,1,1,3.1
+564,Elote,6,3.99,1,1,7.0
+565,Gnocchi al Pesto,1,9.99,1,0,6.5
+566,Šopska salata,2,4.99,1,0,8.1
+567,Sweet and Sour Pork,3,11.99,0,0,7.1
+568,Hamburger,4,6.49,0,1,6.9
+569,Avocado Toast,5,8.49,1,1,8.6
+570,Nachos Supreme,6,8.49,1,0,4.6
+571,Lasagna,1,10.99,0,0,6.4
+572,Komplet lepinja,2,6.49,0,0,1.3
+573,Edamame,3,5.49,1,0,2.7
+574,Spicy Chicken Wrap,4,7.49,0,1,6.6
+575,Mushroom Risotto,5,12.49,1,0,9.2
+576,Burrito Carne,6,8.99,0,0,6.4
+577,Pasta Carbonara,1,11.49,0,0,7.4
+578,Šopska salata,2,4.49,1,0,2.6
+579,Spicy Tuna Roll,3,11.99,0,1,2.4
+580,Crispy Chicken Strips,4,7.49,0,0,5.4
+581,Quinoa Salad,5,9.49,1,0,9.6
+582,Tortilla Soup,6,6.99,0,1,6.3
+583,Osso Buco,1,19.99,0,0,6.2
+584,Sarma,2,9.99,0,0,3.8
+585,Kung Pao Chicken,3,10.49,0,1,8.3
+586,Crispy Chicken Strips,4,8.49,0,0,2.9
+587,Avocado Toast,5,8.99,1,0,9.3
+588,Elote,6,5.49,1,1,4.1
+589,Pasta Bolognese,1,9.49,0,0,3.7
+590,Ajvar,2,4.49,1,1,2.4
+591,Miso Soup,3,4.99,1,0,1.4
+592,Fish and Chips,4,7.99,0,0,6.2
+593,Vegetable Quiche,5,7.99,1,0,8.6
+594,Burrito Bowl,6,11.49,0,0,7.1
+595,Pizza Margherita,1,9.49,1,0,1.0
+596,Raznjici,2,10.49,0,0,6.5
+597,Spicy Tuna Roll,3,12.99,0,1,2.2
+598,Chicken Wings,4,8.99,0,1,6.2
+599,Veggie Burger,5,8.99,1,0,10.0
+600,Mexican Rice,6,4.49,1,0,6.8
+601,Calzone,1,12.49,0,0,4.1
+602,Peèenje,2,15.99,0,0,6.8
+603,Sweet and Sour Pork,3,10.99,0,0,1.9
+604,Fried Chicken,4,9.99,0,0,1.4
+605,Avocado Toast,5,7.49,1,0,10.0
+606,Quesadilla Queso,6,8.49,1,0,5.4
+607,Pasta Bolognese,1,10.49,0,0,1.0
+608,Pljeskavica,2,9.99,0,1,7.3
+609,Green Curry,3,13.49,0,1,6.6
+610,Milkshake,4,3.49,1,0,10.0
+611,Lentil Curry,5,9.49,1,1,6.9
+612,Bean Burrito,6,9.49,1,0,1.9
+613,Osso Buco,1,16.49,0,0,5.9
+614,Beèka šnicla,2,12.99,0,0,3.2
+615,Teriyaki Chicken,3,9.49,0,0,1.0
+616,Chicken Burger,4,6.99,0,0,7.5
+617,Avocado Toast,5,6.99,1,0,9.1
+618,Burrito Carne,6,9.99,0,0,3.8
+619,Panna Cotta,1,5.99,1,0,7.3
+620,Cevapi,2,10.49,0,0,4.3
+621,Tom Yum Soup,3,6.99,0,1,4.0
+622,Fried Chicken,4,8.99,0,0,2.5
+623,Avocado Toast,5,7.49,1,0,6.5
+624,Bean Burrito,6,7.49,1,0,3.1
+625,Risotto ai Funghi,1,10.99,1,0,9.1
+626,Ajvar,2,3.99,1,1,3.5
+627,Miso Soup,3,4.49,1,0,1.0
+628,Chicken Burger,4,6.99,0,1,6.1
+629,Avocado Toast,5,7.49,1,0,9.0
+630,Guacamole & Chips,6,5.49,1,0,5.2
+631,Bruschetta,1,5.49,1,0,4.6
+632,Srpski Gulaš,2,11.49,0,1,10.0
+633,Miso Soup,3,4.49,1,1,2.9
+634,Hamburger,4,6.49,0,1,8.9
+635,Tofu Bowl,5,11.49,1,0,8.3
+636,Quesadilla Queso,6,7.99,1,0,6.5
+637,Minestrone,1,5.49,1,0,2.4
+638,Beèka šnicla,2,11.49,0,0,1.0
+639,Beef Pho,3,10.99,0,0,3.2
+640,Crispy Chicken Strips,4,7.99,0,0,8.9
+641,Quinoa Salad,5,8.99,1,0,8.2
+642,Guacamole & Chips,6,6.99,1,0,1.3
+643,Risotto ai Funghi,1,14.49,1,0,7.4
+644,Pasulj prebranac,2,7.49,1,0,5.1
+645,Panang Curry,3,12.99,0,1,6.0
+646,Cheese Fries,4,5.49,1,0,2.6
+647,Veggie Burger,5,10.49,1,0,7.9
+648,Nachos Supreme,6,6.99,1,0,3.9
+649,Penne Arrabbiata,1,7.99,1,1,1.0
+650,Srpski Gulaš,2,8.99,0,1,9.8
+651,Bibimbap,3,11.49,0,1,9.4
+652,Hamburger,4,5.99,0,0,9.9
+653,Mushroom Risotto,5,10.99,1,1,9.4
+654,Tacos Carnitas,6,9.99,0,0,8.4
+655,Pasta Carbonara,1,12.49,0,0,1.6
+656,Sarma,2,10.99,0,0,6.9
+657,Ramen Tonkotsu,3,12.99,0,0,1.0
+658,Cheeseburger,4,6.49,0,0,8.3
+659,Lentil Curry,5,9.99,1,1,4.7
+660,Taco Salad,6,9.49,0,0,5.0
+661,Saltimbocca,1,14.99,0,0,3.4
+662,Burek,2,3.49,0,0,10.0
+663,Beef Pho,3,12.99,0,0,1.5
+664,Onion Rings,4,2.99,1,0,2.0
+665,Pumpkin Soup,5,5.99,1,0,7.3
+666,Mexican Rice,6,4.49,1,0,1.5
+667,Pasta Bolognese,1,8.99,0,0,6.4
+668,Gibanica,2,3.99,1,0,2.6
+669,Teriyaki Chicken,3,9.49,0,0,2.7
+670,Fried Chicken,4,8.49,0,0,5.9
+671,Vegetable Quiche,5,9.49,1,0,3.0
+672,Burrito Bowl,6,11.49,0,0,1.4
+673,Spaghetti Aglio e Olio,1,8.49,1,1,3.6
+674,Komplet lepinja,2,5.99,0,1,6.8
+675,Spicy Tuna Roll,3,9.99,0,1,2.5
+676,Cheeseburger,4,6.49,0,1,3.9
+677,Avocado Toast,5,7.49,1,0,10.0
+678,Nachos Supreme,6,8.49,1,0,7.1
+679,Tiramisu,1,4.99,1,0,3.3
+680,Ajvar,2,5.49,1,1,8.3
+681,Ramen Tonkotsu,3,10.99,0,0,7.0
+682,Fried Chicken,4,9.49,0,0,8.8
+683,Halloumi Salad,5,10.99,1,1,5.1
+684,Enchiladas Verdes,6,9.49,0,1,9.6
+685,Minestrone,1,5.99,1,0,4.8
+686,Kajmak,2,4.49,1,1,10.0
+687,Fried Rice,3,7.99,1,1,4.7
+688,Club Sandwich,4,6.99,0,0,3.7
+689,Veggie Stir Fry,5,8.99,1,1,8.4
+690,Enchiladas Verdes,6,11.49,0,1,1.0
+691,Pasta Carbonara,1,12.99,0,0,7.2
+692,Punjene paprike,2,9.99,0,0,1.0
+693,Bibimbap,3,12.49,0,1,7.6
+694,Onion Rings,4,2.99,1,0,1.0
+695,Caesar Salad,5,9.49,0,0,1.0
+696,Beef Chimichanga,6,11.99,0,0,7.9
+697,Gnocchi al Pesto,1,9.99,1,1,9.4
+698,Musaka,2,8.99,0,0,9.9
+699,California Roll,3,9.99,0,0,3.4
+700,Fish and Chips,4,9.49,0,0,10.0
+701,Falafel Wrap,5,7.49,1,1,3.6
+702,Taco Salad,6,7.49,0,0,1.0
+703,Saltimbocca,1,17.49,0,0,8.5
+704,Musaka,2,8.99,0,1,2.7
+705,Kung Pao Chicken,3,9.99,0,1,1.0
+706,Milkshake,4,3.99,1,0,2.2
+707,Quinoa Salad,5,9.49,1,0,7.0
+708,Elote,6,5.49,1,1,4.7
+709,Penne Arrabbiata,1,8.49,1,1,1.6
+710,Goulash,2,11.99,0,0,7.3
+711,Chicken Satay,3,10.49,0,1,3.8
+712,Chicken Nuggets,4,5.49,0,1,1.4
+713,Vegan Chili,5,7.49,1,1,3.8
+714,Guacamole & Chips,6,6.99,1,0,10.0
+715,Gnocchi al Pesto,1,9.49,1,0,5.5
+716,Punjene paprike,2,11.49,0,0,2.2
+717,Miso Soup,3,3.99,1,0,5.1
+718,Bacon Burger,4,8.99,0,0,4.1
+719,Caesar Salad,5,9.49,0,0,5.2
+720,Burrito Bowl,6,8.99,0,0,10.0
+721,Osso Buco,1,16.49,0,0,3.5
+722,Gibanica,2,4.49,1,0,4.4
+723,Spicy Tuna Roll,3,11.49,0,1,1.9
+724,Crispy Chicken Strips,4,8.49,0,0,6.9
+725,Veggie Burger,5,9.99,1,0,6.8
+726,Tostadas,6,8.49,0,0,2.8
+727,Osso Buco,1,16.49,0,0,6.6
+728,Burek,2,3.49,0,0,1.5
+729,Gyoza,3,6.49,0,0,9.2
+730,Crispy Chicken Strips,4,8.49,0,0,6.6
+731,Vegetable Quiche,5,7.99,1,0,10.0
+732,Taco Salad,6,8.49,0,1,7.2
+733,Saltimbocca,1,17.49,0,0,1.0
+734,Ajvar,2,4.49,1,1,9.2
+735,Ramen Tonkotsu,3,11.99,0,0,9.7
+736,Chicken Wings,4,8.99,0,1,5.2
+737,Quinoa Salad,5,8.49,1,0,8.6
+738,Nachos Supreme,6,6.99,1,0,9.2
+739,Pizza Quattro Formaggi,1,13.99,1,0,2.7
+740,Kajmak,2,4.49,1,0,2.5
+741,Pad Thai,3,11.49,0,1,6.7
+742,Hamburger,4,7.49,0,0,1.7
+743,Grilled Vegetables,5,7.99,1,0,7.7
+744,Chiles Rellenos,6,11.49,1,1,10.0
+745,Pasta Carbonara,1,11.99,0,0,5.9
+746,Karaðorðeva šnicla,2,15.49,0,0,2.7
+747,Salmon Nigiri,3,13.99,0,0,4.9
+748,Cheese Fries,4,4.99,1,0,7.6
+749,Avocado Toast,5,6.99,1,0,9.2
+750,Elote,6,4.99,1,1,7.9
+751,Fettuccine Alfredo,1,12.49,1,0,7.5
+752,Goulash,2,10.49,0,0,9.9
+753,Fried Rice,3,7.99,1,0,4.1
+754,Pizza Slice,4,3.99,1,0,3.1
+755,Tomato Soup,5,5.99,1,0,1.0
+756,Chili con Carne,6,11.49,0,1,7.6
+757,Tiramisu,1,5.99,1,0,4.0
+758,Burek,2,4.49,0,0,3.2
+759,Bibimbap,3,11.99,0,1,5.0
+760,Fish and Chips,4,10.49,0,0,10.0
+761,Vegetable Quiche,5,7.49,1,0,8.2
+762,Bean Burrito,6,8.49,1,1,3.8
+763,Lasagna,1,10.99,0,0,2.3
+764,Karaðorðeva šnicla,2,12.49,0,0,3.9
+765,Green Curry,3,11.49,0,1,4.6
+766,Fried Chicken,4,8.49,0,0,7.1
+767,Tofu Bowl,5,10.99,1,0,4.0
+768,Ceviche,6,13.99,0,1,8.9
+769,Pasta Carbonara,1,11.49,0,0,3.8
+770,Gibanica,2,4.99,1,0,2.9
+771,Chicken Satay,3,9.99,0,1,5.8
+772,Hamburger,4,5.99,0,0,8.4
+773,Lentil Curry,5,10.99,1,1,5.0
+774,Bean Burrito,6,6.99,1,0,9.4
+775,Gnocchi al Pesto,1,9.49,1,0,5.8
+776,Burek,2,3.99,0,1,8.8
+777,California Roll,3,7.99,0,1,1.0
+778,Bacon Burger,4,9.49,0,0,4.2
+779,Veggie Stir Fry,5,9.49,1,1,5.6
+780,Burrito Carne,6,10.99,0,1,4.6
+781,Minestrone,1,6.99,1,0,9.5
+782,Srpski Gulaš,2,8.99,0,1,6.6
+783,Kung Pao Chicken,3,9.49,0,1,6.6
+784,Milkshake,4,3.99,1,0,7.2
+785,Grilled Vegetables,5,7.99,1,1,1.0
+786,Tortilla Soup,6,6.99,0,1,3.5
+787,Ravioli Ricotta,1,11.99,1,0,4.4
+788,Kajmak,2,4.49,1,0,4.3
+789,Spicy Tuna Roll,3,10.99,0,1,5.6
+790,Spicy Chicken Wrap,4,7.49,0,1,5.4
+791,Buddha Bowl,5,9.49,1,0,9.1
+792,Guacamole & Chips,6,5.49,1,0,5.9
+793,Fettuccine Alfredo,1,11.49,1,0,8.8
+794,Pasulj prebranac,2,7.99,1,0,8.3
+795,Sweet and Sour Pork,3,9.99,0,0,1.5
+796,Milkshake,4,3.99,1,0,5.6
+797,Quinoa Salad,5,10.99,1,0,4.8
+798,Enchiladas Verdes,6,9.99,0,1,7.7
+799,Osso Buco,1,16.99,0,0,7.0
+800,Šopska salata,2,5.49,1,0,8.0
