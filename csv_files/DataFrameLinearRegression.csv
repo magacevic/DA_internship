@@ -1,0 +1,4 @@
+Model,MAE,RMSE,R2
+"Linear Regression, not standardized",0.778686081,1.021673242,0.027553179
+"Linear Regression, standardized",0.778686081,1.021673242,0.027553179
+Ridge - optimized hyperparams,0.778681004,1.021677465,0.027545139

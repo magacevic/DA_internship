@@ -1,0 +1,6 @@
+city_id,city_name,country,region,population,size_category
+1,Belgrade,Serbia,Central,1500000,Large
+2,Novi Sad,Serbia,Northern,400000,Medium
+3,Nis,Serbia,Southern,300000,Medium
+4,Kragujevac,Serbia,Central,200000,Small
+5,Subotica,Serbia,Northern,150000,Small
