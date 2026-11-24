@@ -1,26 +1,45 @@
-create or alter procedure silver.load_cities
+USE FoodMarket;
+GO
+
+create or alter procedure silver.load_city_market_metrics
 as
 begin
 	set nocount on;
 
-	truncate table silver.cities;
+	truncate table silver.city_market_metrics;
 
-	insert into silver.cities(
+	insert into silver.city_market_metrics(
 		city_id,
-		city_name,
-		country,
-		region,
-		population,
-		size_category
+		month_date,
+		avg_order_value_eur,
+		total_orders_count,
+		inflation_rate_percent,
+		unemployment_rate_percent,
+		avg_delivery_time_minutes,
+		active_customers_count,
+		active_restaurants_count,
+		delivery_cost_per_km_eur
 	)
 	select
 		cast(city_id as tinyint),
-		trim(city_name),
-		trim(country),
-		trim(region),
-		cast(population as int),
-		trim(size_category)
-	from bronze.cities;
+		trim(month_date),
+		cast(avg_order_value_eur as decimal(10,2)),
+		cast(total_orders_count as smallint),
+		cast(inflation_rate_percent as float),
+		cast(unemployment_rate_percent as float),
+		cast(avg_delivery_time_minutes as smallint),
+		cast(active_customers_count as smallint),
+		cast(active_restaurants_count as smallint),
+		cast(delivery_cost_per_km_eur as decimal(10,2))
+	from bronze.city_market_metrics
+	where avg_order_value_eur is not null and
+		  total_orders_count is not null and
+		  inflation_rate_percent is not null and
+		  unemployment_rate_percent is not null and
+		  avg_delivery_time_minutes is not null and
+		  active_customers_count is not null and
+		  active_restaurants_count is not null and
+		  delivery_cost_per_km_eur is not null;
 end;
 go
 
@@ -189,5 +208,73 @@ begin
 		cast(number_of_dishes as int),
 		cast(is_active as bit)
 	from bronze.restaurants;
+end;
+go
+
+create or alter procedure silver.load_orders
+as
+begin
+	set nocount on;
+
+	truncate table silver.orders;
+
+	with ranked_orders as (
+        select
+            *,
+            row_number() over (
+                partition by order_id
+                order by order_id
+            ) as rn
+        from bronze.orders
+        where delivery_fee_eur IS NOT NULL
+    ),
+    grouped_orders as (
+        select
+            *,
+            percentile_cont(0.5) within group (
+                order by customer_rating
+            ) over (
+                partition by
+                    discount_eur,
+                    order_amount_eur,
+                    delivery_time_minutes
+            ) as group_median
+        from ranked_orders
+        where rn = 1
+    ),
+    median_orders as (
+        select
+            *,
+            percentile_cont(0.5) within group(
+                order by customer_rating
+            ) over () as overall_median
+        from grouped_orders
+    )
+	insert into silver.orders(
+		order_id,
+		customer_id,
+		restaurant_id,
+		driver_id,
+		order_datetime,
+		delivery_datetime,
+		order_amount_eur,
+		delivery_fee_eur,
+		discount_eur,
+		delivery_time_minutes,
+		customer_rating
+	)
+	select
+		cast(order_id as int),
+		cast(customer_id as int),
+		cast(restaurant_id as smallint),
+		cast(driver_id as int),
+		cast(order_datetime as varchar(255)),
+		cast(delivery_datetime as varchar(255)),
+		cast(order_amount_eur as decimal(10,2)),
+		cast(delivery_fee_eur as decimal(10,2)),
+		cast(discount_eur as decimal(10,2)),
+		cast(delivery_time_minutes as smallint),
+		cast(coalesce(customer_rating, group_median, overall_median) as decimal(5, 1))
+	from median_orders;
 end;
 go
