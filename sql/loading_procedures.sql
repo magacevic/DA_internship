@@ -22,7 +22,7 @@ begin
 	)
 	select
 		try_cast(city_id as tinyint),
-		trim(month_date),
+		try_cast(trim(month_date) + '-01' as date),
 		try_cast(avg_order_value_eur as decimal(10,2)),
 		try_cast(total_orders_count as smallint),
 		try_cast(inflation_rate_percent as float),
@@ -268,8 +268,8 @@ begin
 		try_cast(customer_id as int),
 		try_cast(restaurant_id as smallint),
 		try_cast(driver_id as int),
-		try_cast(order_datetime as varchar(255)),
-		try_cast(delivery_datetime as varchar(255)),
+		try_cast(order_datetime as date),
+		try_cast(delivery_datetime as date),
 		try_cast(order_amount_eur as decimal(10,2)),
 		try_cast(delivery_fee_eur as decimal(10,2)),
 		try_cast(discount_eur as decimal(10,2)),

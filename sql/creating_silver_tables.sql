@@ -12,7 +12,13 @@ create table silver.city_market_metrics(
 );
 
 alter table silver.city_market_metrics
-add constraint PK_City_marketM
+drop constraint PK_City_marketM;
+
+alter table silver.city_market_metrics
+alter column month_date date not null;
+
+alter table silver.city_market_metrics
+add constraint PK_CityMarketMetrics
 primary key (city_id, month_date);
 
 create table silver.cities(
@@ -136,3 +142,9 @@ create table silver.orders(
 	delivery_time_minutes smallint,
 	customer_rating float
 );
+
+alter table silver.orders
+alter column order_datetime date;
+
+alter table silver.orders
+alter column delivery_datetime date;
