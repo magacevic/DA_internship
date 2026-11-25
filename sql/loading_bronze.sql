@@ -2,9 +2,12 @@ USE FoodMarket;
 GO
 
 create or alter procedure bronze.load_all
+	@folder_path nvarchar(500)
 as
 begin	
 	set nocount on;
+
+	declare @sql nvarchar(max);
 
 	truncate table bronze.cities;
 	truncate table bronze.city_market_metrics;
@@ -16,119 +19,114 @@ begin
 	truncate table bronze.restaurants;
 
 	--load csv files
-	bulk insert bronze.people
-    from 'C:\Users\masa.gacevic\Desktop\DA_intern\people.csv'
-    with
-    (
-        firstrow = 2,
-        fieldterminator = ',',
-        rowterminator = '0x0a',
-        codepage = '65001',
-        tablock
-    );
+	
+	set @sql = '
+		bulk insert bronze.people
+		from ''' + concat(@folder_path, '\people.csv') + '''
+		with
+		(
+			firstrow = 2,
+			fieldterminator = '','',
+			rowterminator = ''0x0a'',
+			codepage = ''65001'',
+			tablock
+		);';
+	exec sp_executesql @sql;
 
-	bulk insert bronze.dishes
-    from 'C:\Users\masa.gacevic\Desktop\DA_intern\dishes.csv'
-    with
-    (
-        firstrow = 2,
-        fieldterminator = ',',
-        rowterminator = '0x0a',
-        codepage = '1252',
-        tablock
-    );
+	set @sql = '
+		bulk insert bronze.dishes
+		from ''' + concat(@folder_path, '\dishes.csv') + '''
+		with
+		(
+			firstrow = 2,
+			fieldterminator = '','',
+			rowterminator = ''0x0a'',
+			codepage = ''65001'',
+			tablock
+		);';
+	exec sp_executesql @sql;
 
-	bulk insert bronze.restaurants
-    from 'C:\Users\masa.gacevic\Desktop\DA_intern\restaurants.csv'
-    with
-    (
-        firstrow = 2,
-        fieldterminator = ',',
-        rowterminator = '0x0a',
-        codepage = '65001',
-        tablock
-    );
+	set @sql = '
+		bulk insert bronze.restaurants
+		from ''' + concat(@folder_path, '\restaurants.csv') + '''
+		with
+		(
+			firstrow = 2,
+			fieldterminator = '','',
+			rowterminator = ''0x0a'',
+			codepage = ''65001'',
+			tablock
+		);';
+	exec sp_executesql @sql;
 
-	bulk insert bronze.orders
-    from 'C:\Users\masa.gacevic\Desktop\DA_intern\orders.csv'
-    with
-    (
-        firstrow = 2,
-        fieldterminator = ',',
-        rowterminator = '0x0a',
-        codepage = '65001',
-        tablock
-    );
+	set @sql = '
+		bulk insert bronze.orders
+		from ''' + concat(@folder_path, '\orders.csv') + '''
+		with
+		(
+			firstrow = 2,
+			fieldterminator = '','',
+			rowterminator = ''0x0a'',
+			codepage = ''65001'',
+			tablock
+		);';
+	exec sp_executesql @sql;
 
-	bulk insert bronze.order_items
-    from 'C:\Users\masa.gacevic\Desktop\DA_intern\order_items.csv'
-    with
-    (
-        firstrow = 2,
-        fieldterminator = ',',
-        rowterminator = '0x0a',
-        codepage = '65001',
-        tablock
-    );
+	set @sql = '
+		bulk insert bronze.order_items
+		from ''' + concat(@folder_path, '\order_items.csv') + '''
+		with
+		(
+			firstrow = 2,
+			fieldterminator = '','',
+			rowterminator = ''0x0a'',
+			codepage = ''65001'',
+			tablock
+		);';
+	exec sp_executesql @sql;
 
-	bulk insert bronze.city_market_metrics
-    from 'C:\Users\masa.gacevic\Desktop\DA_intern\city_market_metrics.csv'
-    with
-    (
-        firstrow = 2,
-        fieldterminator = ',',
-        rowterminator = '0x0a',
-        codepage = '65001',
-        tablock
-    );
+	set @sql = '
+		bulk insert bronze.city_market_metrics
+		from ''' + concat(@folder_path, '\city_market_metrics.csv') + '''
+		with
+		(
+			firstrow = 2,
+			fieldterminator = '','',
+			rowterminator = ''0x0a'',
+			codepage = ''65001'',
+			tablock
+		);';
+	exec sp_executesql @sql;
 
-	bulk insert bronze.cuisine_categories
-    from 'C:\Users\masa.gacevic\Desktop\DA_intern\cuisine_categories.csv'
-    with
-    (
-        firstrow = 2,
-        fieldterminator = ',',
-        rowterminator = '0x0a',
-        codepage = '65001',
-        tablock
-    );
+	set @sql = '
+		bulk insert bronze.cuisine_categories
+		from ''' + concat(@folder_path, '\cuisine_categories.csv') + '''
+		with
+		(
+			firstrow = 2,
+			fieldterminator = '','',
+			rowterminator = ''0x0a'',
+			codepage = ''65001'',
+			tablock
+		);';
+	exec sp_executesql @sql;
 
-	bulk insert bronze.cities
-    from 'C:\Users\masa.gacevic\Desktop\DA_intern\cities.csv'
-    with
-    (
-        firstrow = 2,
-        fieldterminator = ',',
-        rowterminator = '0x0a',
-        codepage = '65001',
-        tablock
-    );
+	set @sql = '
+		bulk insert bronze.cities
+		from ''' + concat(@folder_path, '\cities.csv') + '''
+		with
+		(
+			firstrow = 2,
+			fieldterminator = '','',
+			rowterminator = ''0x0a'',
+			codepage = ''65001'',
+			tablock
+		);';
+	exec sp_executesql @sql;
 
 end;
 go
 
-exec bronze.load_all;
-
-select *
-from bronze.people;
-
-select *
-from bronze.cities;
-
-select *
-from bronze.city_market_metrics;
-
-select *
-from bronze.cuisine_categories;
-
-select *
-from bronze.order_items;
-
-select *
-from bronze.restaurants;
-
-select *
-from bronze.dishes;
-
-select *
-from bronze.orders;
+exec bronze.load_all
+    @folder_path = 'C:\Users\masa.gacevic\Desktop\DA_intern';
+go

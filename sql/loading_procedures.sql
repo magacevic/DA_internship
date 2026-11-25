@@ -21,16 +21,16 @@ begin
 		delivery_cost_per_km_eur
 	)
 	select
-		cast(city_id as tinyint),
+		try_cast(city_id as tinyint),
 		trim(month_date),
-		cast(avg_order_value_eur as decimal(10,2)),
-		cast(total_orders_count as smallint),
-		cast(inflation_rate_percent as float),
-		cast(unemployment_rate_percent as float),
-		cast(avg_delivery_time_minutes as smallint),
-		cast(active_customers_count as smallint),
-		cast(active_restaurants_count as smallint),
-		cast(delivery_cost_per_km_eur as decimal(10,2))
+		try_cast(avg_order_value_eur as decimal(10,2)),
+		try_cast(total_orders_count as smallint),
+		try_cast(inflation_rate_percent as float),
+		try_cast(unemployment_rate_percent as float),
+		try_cast(avg_delivery_time_minutes as smallint),
+		try_cast(active_customers_count as smallint),
+		try_cast(active_restaurants_count as smallint),
+		try_cast(delivery_cost_per_km_eur as decimal(10,2))
 	from bronze.city_market_metrics
 	where avg_order_value_eur is not null and
 		  total_orders_count is not null and
@@ -60,11 +60,11 @@ begin
 		size_category
 	)
 	select
-		cast(city_id as tinyint),
+		try_cast(city_id as tinyint),
 		trim(city_name),
 		trim(country),
 		trim(region),
-		cast(population as int),
+		try_cast(population as int),
 		trim(size_category)
 	from bronze.cities;
 end;
@@ -83,7 +83,7 @@ begin
 		cuisine_name
 	)
 	select
-		cast(cuisine_category_id as tinyint),
+		try_cast(cuisine_category_id as tinyint),
 		trim(cuisine_name)
 	from bronze.cuisine_categories;
 end;
@@ -106,13 +106,13 @@ begin
 		popularity_score
 	)
 	select
-		cast(dish_id as smallint),
+		try_cast(dish_id as smallint),
 		trim(dish_name),
-		cast(cuisine_category_id as tinyint),
-		cast(price_eur as decimal(10,2)),
-		cast(is_vegetarian as bit),
-		cast(is_spicy as bit),
-		cast(popularity_score as float)
+		try_cast(cuisine_category_id as tinyint),
+		try_cast(price_eur as decimal(10,2)),
+		try_cast(is_vegetarian as bit),
+		try_cast(is_spicy as bit),
+		try_cast(popularity_score as float)
 	from bronze.dishes;
 end;
 go
@@ -133,12 +133,12 @@ begin
 		subtotal_eur
 	)
 	select
-		cast(order_item_id as int),
-		cast(order_id as int),
-		cast(dish_id as smallint),
-		cast(quantity as tinyint),
-		cast(price_per_item_eur as decimal(10,2)),
-		cast(subtotal_eur as decimal(10,2))
+		try_cast(order_item_id as int),
+		try_cast(order_id as int),
+		try_cast(dish_id as smallint),
+		try_cast(quantity as tinyint),
+		try_cast(price_per_item_eur as decimal(10,2)),
+		try_cast(subtotal_eur as decimal(10,2))
 	from bronze.order_items;
 end;
 go
@@ -163,16 +163,16 @@ begin
 		total_transactions
 	)
 	select
-		cast(person_id as int),
+		try_cast(person_id as int),
 		trim(person_name),
 		trim(person_type),
-		cast(city_id as int),
+		try_cast(city_id as int),
 		trim(age_group),
 		trim(gender),
 		trim(phone),
-		cast(registration_date as date),
+		try_cast(registration_date as date),
 		trim(account_status),
-		cast(total_transactions as smallint)
+		try_cast(total_transactions as smallint)
 	from bronze.people;
 end;
 go
@@ -197,16 +197,16 @@ begin
 		is_active
 	)
 	select
-		cast(restaurant_id as smallint),
+		try_cast(restaurant_id as smallint),
 		trim(restaurant_name),
-		cast(owner_id as int),
-		cast(city_id as tinyint),
-		cast(cuisine_category_id as tinyint),
-		cast(opening_year as smallint),
-		cast(total_orders_count as int),
-		cast(average_rating as float),
-		cast(number_of_dishes as int),
-		cast(is_active as bit)
+		try_cast(owner_id as int),
+		try_cast(city_id as tinyint),
+		try_cast(cuisine_category_id as tinyint),
+		try_cast(opening_year as smallint),
+		try_cast(total_orders_count as int),
+		try_cast(average_rating as float),
+		try_cast(number_of_dishes as int),
+		try_cast(is_active as bit)
 	from bronze.restaurants;
 end;
 go
@@ -264,17 +264,17 @@ begin
 		customer_rating
 	)
 	select
-		cast(order_id as int),
-		cast(customer_id as int),
-		cast(restaurant_id as smallint),
-		cast(driver_id as int),
-		cast(order_datetime as varchar(255)),
-		cast(delivery_datetime as varchar(255)),
-		cast(order_amount_eur as decimal(10,2)),
-		cast(delivery_fee_eur as decimal(10,2)),
-		cast(discount_eur as decimal(10,2)),
-		cast(delivery_time_minutes as smallint),
-		cast(coalesce(customer_rating, group_median, overall_median) as decimal(5, 1))
+		try_cast(order_id as int),
+		try_cast(customer_id as int),
+		try_cast(restaurant_id as smallint),
+		try_cast(driver_id as int),
+		try_cast(order_datetime as varchar(255)),
+		try_cast(delivery_datetime as varchar(255)),
+		try_cast(order_amount_eur as decimal(10,2)),
+		try_cast(delivery_fee_eur as decimal(10,2)),
+		try_cast(discount_eur as decimal(10,2)),
+		try_cast(delivery_time_minutes as smallint),
+		try_cast(coalesce(customer_rating, group_median, overall_median) as decimal(5, 1))
 	from median_orders;
 end;
 go

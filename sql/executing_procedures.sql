@@ -16,7 +16,3 @@ begin
 	exec silver.load_orders;
 end;
 go
-
-
-select *
-from silver.city_market_metrics;

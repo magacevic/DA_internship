@@ -15,9 +15,6 @@ alter table silver.city_market_metrics
 add constraint PK_City_marketM
 primary key (city_id, month_date);
 
-
-truncate table silver.city_market_metrics;
-
 create table silver.cities(
 	city_id tinyint primary key not null,
 	city_name varchar(255),
@@ -27,13 +24,25 @@ create table silver.cities(
 	size_category varchar(255)
 );
 
+alter table silver.cities
+alter column city_name nvarchar(255);
+
+alter table silver.cities
+alter column country nvarchar(255);
+
+alter table silver.cities
+alter column region nvarchar(255);
+
+alter table silver.cities
+alter column size_category nvarchar(255);
+
 create table silver.cuisine_categories(
 	cuisine_category_id tinyint primary key not null,
 	cuisine_name varchar(255)
 );
 
-truncate table silver.cities;
-truncate table silver.cuisine_categories;
+alter table silver.cuisine_categories
+alter column cuisine_name nvarchar(255);
 
 create table silver.people(
 	person_id int primary key not null,
@@ -48,7 +57,23 @@ create table silver.people(
 	total_transactions smallint
 );
 
-truncate table silver.people;
+alter table silver.people
+alter column person_name nvarchar(255);
+
+alter table silver.people
+alter column person_type nvarchar(255);
+
+alter table silver.people
+alter column age_group nvarchar(255);
+
+alter table silver.people
+alter column gender nvarchar(255);
+
+alter table silver.people
+alter column phone nvarchar(255);
+
+alter table silver.people
+alter column account_status nvarchar(255);
 
 create table silver.order_items(
 	order_item_id int primary key not null,
@@ -75,6 +100,9 @@ alter table silver.dishes
 alter column is_vegetarian BIT;
 
 alter table silver.dishes
+alter column dish_name nvarchar(255);
+
+alter table silver.dishes
 alter column is_spicy BIT;
 
 truncate table silver.dishes;
@@ -91,6 +119,9 @@ create table silver.restaurants(
 	number_of_dishes int,
 	is_active bit
 );
+
+alter table silver.restaurants
+alter column restaurant_name nvarchar(255);
 
 create table silver.orders(
 	order_id int primary key not null,
