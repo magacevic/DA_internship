@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 import os
 import seaborn as sns
 
-cities = pd.read_csv("../files/cities.csv")
-people = pd.read_csv("../files/people.csv")
-restaurants = pd.read_csv("../files/restaurants.csv")
-orders = pd.read_csv("../files/orders_with_nulls.csv")
-dishes = pd.read_csv("../files/dishes.csv")
-order_items = pd.read_csv("../files/order_items.csv")
-city_market_metrics = pd.read_csv("../files/city_market_metrics_with_nulls.csv")
+cities = pd.read_csv(r"C:\Users\masa.gacevic\Desktop\druga_sedmica\files\cities.csv")
+people = pd.read_csv(r"C:\Users\masa.gacevic\Desktop\druga_sedmica\files\people.csv")
+restaurants = pd.read_csv(r"C:\Users\masa.gacevic\Desktop\druga_sedmica\files\restaurants.csv")
+orders = pd.read_csv(r"C:\Users\masa.gacevic\Desktop\druga_sedmica\files\orders_with_nulls.csv")
+dishes = pd.read_csv(r"C:\Users\masa.gacevic\Desktop\druga_sedmica\files\dishes.csv")
+order_items = pd.read_csv(r"C:\Users\masa.gacevic\Desktop\druga_sedmica\files\order_items.csv")
+city_market_metrics = pd.read_csv(r"C:\Users\masa.gacevic\Desktop\druga_sedmica\files\city_market_metrics_with_nulls.csv")
 
 #Value counts for spicy meals
 dishes['is_spicy'].value_counts().plot(kind = "bar")
@@ -72,3 +72,11 @@ print(pd.DataFrame(outliers_restaurants))
 orders_numeric = orders.select_dtypes(include='number')
 print(orders_numeric.describe())
 
+#Histogram regarding prices of items
+
+plt.figure(figsize=(8,6))
+plt.hist(order_items['price_per_item_eur'], bins = 25)
+plt.title("Histogram regarding order item prices")
+plt.xlabel('Price in eur')
+plt.ylabel('Frequency')
+plt.show()
