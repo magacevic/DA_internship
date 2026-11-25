@@ -223,7 +223,7 @@ begin
             *,
             row_number() over (
                 partition by order_id
-                order by order_id
+                order by delivery_datetime desc, order_amount_eur desc
             ) as rn
         from bronze.orders
         where delivery_fee_eur IS NOT NULL
