@@ -17,6 +17,10 @@ begin
 		exec silver.load_all;
 
 		print 'Silver layer added';
+
+		exec gold.load_all;
+
+		print 'Gold layer added'; 
 	end try
 	begin catch
 		

@@ -101,6 +101,15 @@ create table gold.FactOrder(
 );
 
 alter table gold.FactOrder
+drop column total_transactions;
+go
+
+alter table gold.FactOrder
+add customer_total_transactions INT,
+    driver_total_transactions INT,
+    owner_total_transactions INT;
+
+alter table gold.FactOrder
 add constraint FK_FactOrder_DimRestaurant
 foreign key (restaurant_id)
 references gold.DimRestaurant(restaurant_id);
