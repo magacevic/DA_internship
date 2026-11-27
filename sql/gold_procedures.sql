@@ -152,19 +152,30 @@ begin
         phone,
         registration_date,
         account_status,
-        gender
+        gender,
+		role_mismatch
     )
     select
-        person_id,
-        person_name,
-        person_type,
-        city_id,
-        age_group,
-        phone,
-        registration_date,
-        account_status,
-        gender
-    from silver.people;
+        p.person_id,
+		p.person_name,
+		p.person_type,
+		p.city_id,
+		p.age_group,
+		p.phone,
+		p.registration_date,
+		p.account_status,
+		p.gender,
+		case
+			when p.person_type = 'Driver'
+				 and exists (
+					 select 1
+					 from silver.orders o
+					 where o.customer_id = p.person_id
+				 )
+			then 1
+			else 0
+		end as role_mismatch
+	from silver.people p;
 
 
     --------------------------------------------------

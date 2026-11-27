@@ -125,6 +125,9 @@ create table gold.DimPeople(
 	account_status char
 );
 
+alter table gold.DimPeople
+add role_mismatch BIT;
+
 alter table gold.FactOrder
 add constraint FK_FactOrder_DimPeopleCustomer
 foreign key (customer_id)
