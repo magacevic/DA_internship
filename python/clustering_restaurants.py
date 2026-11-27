@@ -20,21 +20,6 @@ X = merged[numeric_attributes]
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-#kmeans = KMeans(n_clusters=4)
-#kmeans.fit(X_scaled)
-
-#print(kmeans.labels_)
-
-#labels = kmeans.predict(X_scaled)
-#merged['cluster'] = labels
-
-#print(merged['cluster'].value_counts().sort_index())
-
-#print(merged.groupby('cluster')[numeric_attributes].mean().round(2))
-
-#centroids = pd.DataFrame(kmeans.cluster_centers_, columns=numeric_attributes)
-#print(centroids)
-
 from sklearn.metrics import silhouette_samples, silhouette_score
 
 ks = range(2,11)
@@ -64,30 +49,15 @@ plt.figure(figsize=(10, 7))
 for label in range(6):
     cluster = merged[merged['cluster'] == label]
 
-    plt.scatter(
-        cluster['number_of_dishes'],
-        cluster['total_orders_count'],
-        label=f'Cluster {label}',
-        alpha=0.7
-    )
+    plt.scatter(cluster['average_rating'],cluster['total_orders_count'],label=f'Cluster {label}',alpha=0.7)
 
-centroids = pd.DataFrame(
-    scaler.inverse_transform(kmeans.cluster_centers_),
-    columns=numeric_attributes
-)
+centroids = pd.DataFrame(scaler.inverse_transform(kmeans.cluster_centers_),columns=numeric_attributes)
 
-plt.scatter(
-    centroids['number_of_dishes'],
-    centroids['total_orders_count'],
-    color='black',
-    marker='X',
-    s=150,
-    label='Centroids'
-)
+plt.scatter(centroids['average_rating'],centroids['total_orders_count'],color='black',marker='X',s=150,label='Centroids')
 
 plt.title('K-means clustering of restaurants (k=6)')
-plt.xlabel('Number of dishes')
+plt.xlabel('Average rating')
 plt.ylabel('Total orders count')
 plt.legend()
-plt.grid(alpha=0.3)
+plt.grid(alpha=0.7)
 plt.show()
