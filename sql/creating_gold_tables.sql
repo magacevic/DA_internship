@@ -157,3 +157,6 @@ alter table gold.DimPeople
 add constraint FK_DimPeople_DimCities
 foreign key (city_id)
 references gold.DimCities(city_id);
+
+alter table gold.DimPeople
+drop constraint FK_DimPeople_DimCities;
