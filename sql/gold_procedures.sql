@@ -239,13 +239,13 @@ begin
         on o.restaurant_id = r.restaurant_id
     join silver.people p_customer
         on o.customer_id = p_customer.person_id
-        and p_customer.person_type = 'Customer'
+        --and p_customer.person_type = 'Customer'
     join silver.people p_driver
         on o.driver_id = p_driver.person_id
-        and p_driver.person_type = 'Driver'
+        --and p_driver.person_type = 'Driver'
     join silver.people p_owner
-        on r.owner_id = p_owner.person_id
-        and p_owner.person_type = 'Restaurant Owner';
+        on r.owner_id = p_owner.person_id;
+        --and p_owner.person_type = 'Restaurant Owner';
 
 
     -- factorder_item
